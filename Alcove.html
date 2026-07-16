@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcove</title>
+    <style>
+    *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none; list-style: none; outline: none; border: none; transition: all 0.3s linear;}
+    body{padding:35px;background:#FFF2E0;}
+    .navbar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;}
+    .navbar .logo{color:#1A1A1A;font-size:25px;font: weight 800px;;padding-left:40px;}
+    .navbar .nav-links{display:flex;align-items:center;flex-direction:row;justify-content:space-between;gap:80px;}  
+    .navbar .nav-links .faqs{color:#1A1A1A;font: size 35px;font-weight:800px;padding-left:20px;text-decoration:none;}
+    .navbar .nav-links .download2{color:#1A1A1A;font: size 35px;font-weight:800px;padding-left:20px;text-decoration:none;background-color:#F7E9D8;padding:15px 20px 15px 20px;border-radius:10px;}
+    .navbar .nav-links .download2::before{content:'';display: inline-block;font-size: 25px;padding:5px;position: relative;top: 2px}
+    .logo::before{content:'';border: #1A1A1A 3px solid;border-radius:10px;width:35px;height:35px;display:inline-block;position:absolute;left:40px;top:40px;}
+    .logo::after{content:'';border: #1A1A1A 1px solid;opacity:0.5;border-radius:5px;width:20px;height:10px;display:inline-block;position:absolute;left:175px;top:50px;} 
+
+    .hero{display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 0;}
+    .hero-content h1{font-size:85px;line-height:1.1;color:#1A1A1A;letter-spacing:-1px;font-weight:800px;position: relative;margin-bottom: 40px;}
+    .hero-content h1::after{content:'';position:absolute;background: #f3abb5;width: 260px;height: 48px;z-index: -1;left:620px;top:145px;}
+    .hero-buttons{display:flex;align-items:center;justify-content:center;gap:40px;margin-bottom: 80px;}
+    .download{color:#F7E9D8;font-size:18px;font-weight:800px;padding-left:20px;position: relative;text-decoration:none;background-color:#1A1A1A;padding:15px 20px 15px 20px;border-radius:10px;box-shadow: 0px 1px 10px rgba(219,35,35,0.4),0px 10px 25px 10px rgba(219, 35, 35, 0.2); }
+    .price{color:#1A1A1A;font-size:18px;font-weight:800px;padding-left:20px;position: relative;text-decoration:none;background-color:#F7E9D8;padding:15px 20px 15px 20px;border-radius:10px;}
+    .price::before{content:'✅';display: inline-block;font-size: 25px;padding:5px 10px;position: relative;top: 1px;font-size:large;filter: grayscale(100%);}  
+    .price span{color:#F7E9D8;font-size:15px;font-weight:800px;padding:5px 10px;position: relative;text-decoration:none;background-color:#1A1A1A;;border-radius:8px;margin-left:10px;}
+    .img{border-radius:40px;box-shadow: 0px 1px 10px rgba(220, 131, 131, 0.4);margin-bottom: 30px;}
+    .hero-content p{font-size:15px;color:rgba(70, 51, 51, 0.5);letter-spacing:0.5px}
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Alcove</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="faqs">FAQs</a></li>
+        <li><a href="#about" class="download2"> Download for MAC</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Dynamic Island.<br>Now for your Mac</h1>
+          <div class="hero-buttons">
+            <a href="#download" class="download"> Download for MAC</a>
+            <a href="#faqs" class="price">Purchase<span>$13.99</span></a>
+          </div>
+            <img src="https://picsum.photos/950/500" alt="Hero Image" class="img"/>
+            <p class="tip">↗ Psst... It's interactive!</p>
+      </section>
+    </main>   
+</body> 
